@@ -7,3 +7,8 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.initial-content {
+  padding-left: 20px;  // 좌측 패딩을 20px로 조정
+  padding-right: 20px; // 우측 패딩을 20px로 조정
+}
