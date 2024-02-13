@@ -1,8 +1,8 @@
 
 ---
-layout: page
+layout: posts
 title: My New Page
-permalink: /my-new-page/
+permalink: /new/
 ---
 
 # Welcome to My New Page!
