@@ -1,3 +1,7 @@
+---
+layout: home
+---
+
 # Welcome to My New Page!
 
 This is a sample page to demonstrate how to create a new page in a Jekyll site.
