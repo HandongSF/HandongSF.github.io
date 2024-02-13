@@ -1,14 +1,14 @@
 # main links
 main:
   - title: "Community"
-    url: /year-archive/
+    url: /_pages/community
   - title: "Projects"
-    url: /collection-archive/
+    url: /_pages/projects
   - title: "Downloads"
-    url: /sitemap/
+    url: /_pages/downloads
   - title: "Learn"
-    url: /sitemap/
+    url: /_pages/learn
   - title: "Resources & Tools"
-    url: /sitemap/
+    url: /_pages/resources
   - title: "About"
     url: /_pages/about/
