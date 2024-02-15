@@ -3,7 +3,7 @@ main:
   - title: "Community"
     url: /_pages/community
   - title: "Projects"
-    url: /_layouts/posts
+    url: /_pages/projects
   - title: "Downloads"
     url: /_pages/downloads
   - title: "Learn"
