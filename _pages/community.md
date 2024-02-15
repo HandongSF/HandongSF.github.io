@@ -1,7 +1,66 @@
 ---
-layout: single
-title: "About Me"
+layout: archive
 ---
 
-# Hi everyone!
+{{ content }}
 
+<!-- <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Handong Software Foundation이란?" }}</h3> -->
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% for post in posts %}
+    {% include archive-single.html type=entries_layout %}
+  {% endfor %}
+</div>
+
+<style>
+  p.small-text {
+    font-size: 17px; /* 원하는 글자 크기로 설정 */
+  }
+</style>
+
+<style>
+  p.medium-text {
+    font-size: 21px; /* 원하는 글자 크기로 설정 */
+    font-weight: bold;
+  }
+</style>
+
+
+{% include paginator.html %}
+
+<h3> HSF란? </h3>
+
+<p class="small-text">Handong Software Foundation의 약자로, 한동대학교에서 진행되는 프로젝트의 수명이 끝나는 것을 막고<br>학생들이 오픈소스 프로젝트 개발자로 성장하는 것을 돕는 플랫폼입니다.</p> 
+
+<div>
+  <hr>  
+</div>
+
+
+<div>
+  <h3> HSF에는 어떤 프로젝트들이 있나요? </h3>
+  <p class="small-text">HSF의 프로젝트는 크게 2가지로 나뉩니다.</p>
+
+  <div style="padding-top: 15px;">
+    <p class="medium-text">Incubating Projects</p>
+    <p class="small-text">Incubating Project는 HSF에서 관리하는 프로젝트 중, 초기단계에 해당하는 프로젝트에 해당합니다. <br> 다양한 선배 개발자들의 도움을 얻고 성장하는 프로젝트들이고, 누구나 참여할 수 있습니다.</p>
+
+  </div>
+  <div style="padding-top: 15px;">
+
+    <p class="medium-text">Featured Projects</p>
+    <p class="small-text">Featured Project는 HSF의 프로젝트 중, 초기단계를 지나 활성화되어 개발되고 있는 프로젝트입니다.</p>
+  </div>
+   
+</div>
+
+<div>
+  <hr>  
+</div>
