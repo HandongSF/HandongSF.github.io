@@ -2,7 +2,23 @@
 layout: archive
 ---
 
-<p> 이건 테스트! </p>
+<style>
+  p.small-text {
+    font-size: 17px; /* 원하는 글자 크기로 설정 */
+  }
+</style>
+
+<style>
+  p.medium-text {
+    font-size: 21px; /* 원하는 글자 크기로 설정 */
+    font-weight: bold;
+  }
+</style>
+<div>
+  <h3> Becomming A Contributor </h3>
+  <p style="small-text"> 이 페이지는 HSF를 처음 접하여, Contributor에 대해서 잘 알지 못하는 사람들을 위한 페이지입니다. </p>
+</div>
+
 
 {% assign categories_max = 0 %}
 {% for category in site.categories %}
