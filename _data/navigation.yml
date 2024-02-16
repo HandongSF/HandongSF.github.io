@@ -6,9 +6,9 @@ main:
     url: /_pages/projects
   - title: "다운로드"
     url: /_pages/downloads
-  - title: "Learn"
+  - title: "운영"
     url: /_pages/learn
-  - title: "Resources & Tools"
+  - title: "기술자료 및 도구"
     url: /_pages/resources
-  - title: "About"
+  - title: "소개"
     url: /_pages/about/
