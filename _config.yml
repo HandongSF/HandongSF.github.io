@@ -21,7 +21,7 @@ collections:
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Handong Software Foundation"
+title                    : "한동 소프트웨어 파운데이션"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "HSF"
