@@ -1,10 +1,10 @@
 # main links
 main:
-  - title: "Community"
+  - title: "커뮤니티"
     url: /_pages/community
-  - title: "Projects"
+  - title: "프로젝트"
     url: /_pages/projects
-  - title: "Downloads"
+  - title: "다운로드"
     url: /_pages/downloads
   - title: "Learn"
     url: /_pages/learn
