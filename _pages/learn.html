@@ -1,0 +1,75 @@
+---
+layout: archive
+---
+
+<!-- <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Handong Software Foundation이란?" }}</h3> -->
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% for post in posts %}
+    {% include archive-single.html type=entries_layout %}
+  {% endfor %}
+</div>
+
+<style>
+  p.small-text {
+    font-size: 17px; /* 원하는 글자 크기로 설정 */
+  }
+</style>
+
+<style>
+  p.Lmedium-text {
+    font-size: 19px; /* 원하는 글자 크기로 설정 */
+    font-weight: bold;
+  }
+</style>
+
+<style>
+  p.medium-text {
+    font-size: 21px; /* 원하는 글자 크기로 설정 */
+    font-weight: bold;
+  }
+</style>
+
+
+{% include paginator.html %}
+
+<h3> About </h3>
+
+<p class="small-text"> 이 페이지는 HSF 운영팀에 대한 정보와 그동안 참여했던 사람들의 명단을 소개합니다. </p> 
+
+<hr>
+
+<p class="medium-text"> HSF 운영팀 </p>
+<p class="small-text"> 한동대학교 전산전자공학부 남재창 교수(jcnam@handong.edu) </p> 
+<p class="small-text"> 한동대학교 전산전자공학부 김동규 학생(kdg1941@handong.ac.kr) </p> 
+
+
+
+<hr>
+<p class="medium-text"> HSF 참여자 </p>
+<p class="small-text"> 한동대학교 전산전자공학부 김동규 학생(kdg1941@handong.ac.kr) - jChecker 프로젝트 참여</p> 
+
+<p> <br>     </p>
+
+
+<!-- <table border="1">
+  <tr>
+    <th>헤더 1</th>
+    <th>헤더 2</th>
+  </tr>
+  <tr>
+    <td>행 1, 열 1</td>
+    <td>행 1, 열 2</td>
+  </tr>
+  <tr>
+    <td>행 2, 열 1</td>
+    <td>행 2, 열 2</td>
+  </tr>
+</table> -->
