@@ -1,0 +1,96 @@
+---
+layout: archive
+---
+
+<!-- <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Handong Software Foundation이란?" }}</h3> -->
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% for post in posts %}
+    {% include archive-single.html type=entries_layout %}
+  {% endfor %}
+</div>
+
+<style>
+  p.small-text {
+    font-size: 17px; /* 원하는 글자 크기로 설정 */
+  }
+</style>
+
+<style>
+  p.Lmedium-text {
+    font-size: 19px; /* 원하는 글자 크기로 설정 */
+    font-weight: bold;
+  }
+</style>
+
+<style>
+  p.medium-text {
+    font-size: 21px; /* 원하는 글자 크기로 설정 */
+    font-weight: bold;
+  }
+</style>
+
+
+{% include paginator.html %}
+
+<h3> Projects </h3>
+
+<p class="small-text"> 이 페이지는 HSF의 프로젝트의 구성과 프로젝트 구성원들이 알아야하는 정보들을 제공합니다. </p> 
+
+<hr>
+
+<p class="medium-text"> 오픈소스 소프트웨어란? </p>
+<p class="small-text"> 오픈소스 소프트웨어란 누구나 보고, 편집하고, 기여할 수 있는 소스코드가 포함된 소프트웨어입니다. 오픈소스 프로젝트에는 커뮤니티 구축 및 멘토링, 커뮤니케이션 및 배포 등 모든 것들을 포함하여 오픈소스 소프트웨어 생성, 유지 관리 및 배포를 담당하는 측면이 포함됩니다. </p> 
+
+<p class="small-text"> 누구나 코드, 문서화, 블로그 작성, 프로젝트 홍보 및 관리 등 여러가지 방법으로 기여할 수 있습니다. </p> 
+<p class="small-text"> 만일 HSF나 오픈소스를 처음 접하는 경우, <a href="/_pages/community"> 여기</a>를 눌러 HSF의 기본 지식을 배우는 것이 좋습니다. 그 다음 관심있는 프로젝트를 찾고, 해당 프로젝트의 문화와 규칙을 숙지한 후 참여할 수 있습니다.</p> 
+
+
+
+<hr>
+<p class="medium-text"> Incubating / Featured Project </p>
+<p class="small-text"> 여기에서는 Incubating project와 Featured project의 차이점에 대해서 설명합니다. </p> 
+
+<p> <br>     </p>
+
+<p class="Lmedium-text"> Incubating Project란? </p> 
+<p class="small-text"> Incubating project는 HSF에 참여하려는 초기 단계의 프로젝트를 의미합니다. </p> 
+<p class="small-text"> 이 프로젝트들은 아직 Featured Project만큼 활발하게 소통과 개발이 이루어지고 있는 프로젝트가 아닙니다. HSF 내에서 많은 개발자들이 상호작용하여 프로젝트의 규모를 키우고, Featured Project로 올라갈 수 있습니다. </p>
+
+<p> <br>     </p>
+
+<p class="Lmedium-text"> Featured Project란? </p> 
+<p class="small-text"> Featured project는 HSF에서 진행되는 프로젝트들 중, 활발한 활동이 이루어지는 프로젝트들을 의미합니다. </p> 
+<p class="small-text"> 수 많은 개발자들이 개발에 참여하고, 전문 Committer와의 의사소통을 통해서 프로젝트를 더욱 활성화시키는 단계에 있는 프로젝트입니다. </p>
+
+<p> <br>     </p>
+<p class="small-text"> Incubating Project는 프로젝트의 소개 부분에 Incubating이라는 단어가 붙게 됩니다. HSF 운영팀의 판단 하에 <br> 활성화 된 프로젝트에 한하여 Featured Project가 될 경우, Incubating이라는 단어 없이 프로젝트가 진행될 수 있습니다. </p>
+<hr>
+
+<p class="medium-text"> Report a Vulnerability </p>
+<p class="small-text"> 오픈소스 소프트웨어 프로젝트에 개발자로 참여하면, 여러가지 보안상의 문제가 발생할 수 있습니다. 이 단락에서는 이러한 보안상의 문제를 발견할 경우 어떻게 해결해야 하는지에 대해서 설명합니다. </p> 
+<p> <br>     </p>
+<p class="Lmedium-text"> Steps for Reporting a Vulnerability </p>
+<p class="small-text"> 보안 문제를 발견할 경우, 공개적으로 논의를 하기 전에 가장 먼저 HSF 운영 팀에게 비공개로 알려야 합니다. HSF 운영팀은 <a href="/_pages/community"> 여기</a>를 눌러 확인할 수 있습니다.</p> 
+<p class="small-text"> HSF에 공개되지 않은 보안 취약점을 보고하고, 수정하는 프로세스를 관리하려면 HSF 운영팀의 연락처만 사용해야 합니다. </p> 
+
+<p class="small-text"> 그 다음, 해당 프로젝트의 보안 팀은 취약점을 해결하기 위해 보고자와 비공개로 소통합니다. </p> 
+
+<p class="small-text"> 프로젝트 보안 팀과 보고자는 취약점이 영향을 미치는 패키지의 새로운 배포 버전을 생성하여 수정사항을 제공합니다. </p> 
+
+<p class="small-text"> 프로젝트에서는 취약점을 공개적으로 발표하고, 다른 참여자들에게 수정 사항을 적용하는 방법에 대해서 안내합니다. </p> 
+
+<p class="small-text"> 해당 프로젝트의 Committer는 더 자세한 설명을 읽어야 하고, 꼼꼼하게 이해를 해야 합니다. </p> 
+
+
+<p> <br>     </p>
+<p class="Lmedium-text"> Vulnerability Information </p>
+<p class="small-text"> 각 프로젝트에서 발생한 보안상의 문제는 각 프로젝트 repository에 문서화 되어 있습니다. 그 외의 문제가 발생할 경우에 HSF 운영팀에게 문의하시길 바랍니다.</p> 
+<p class="small-text"> HSF 운영팀에게 직접적으로 문의를 하는 경우는, 해당 프로젝트에 발생하지 않은 보안상의 문제에만 해당합니다.</p> 
