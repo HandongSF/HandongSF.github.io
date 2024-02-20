@@ -1,0 +1,112 @@
+---
+layout: archive
+---
+
+<!-- <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Handong Software Foundation이란?" }}</h3> -->
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% for post in posts %}
+    {% include archive-single.html type=entries_layout %}
+  {% endfor %}
+</div>
+
+<style>
+  p.small-text {
+    font-size: 17px; /* 원하는 글자 크기로 설정 */
+  }
+</style>
+
+<style>
+  p.Lmedium-text {
+    font-size: 18px; /* 원하는 글자 크기로 설정 */
+    font-weight: bold;
+  }
+</style>
+
+<style>
+  p.medium-text {
+    font-size: 21px; /* 원하는 글자 크기로 설정 */
+    font-weight: bold;
+  }
+</style>
+
+
+{% include paginator.html %}
+
+<h3> The Handong Way </h3>
+
+<p class="small-text"> 이 페이지는 The Handong Way에 대한 내용을 기술합니다. </p> 
+
+<p class="small-text"> The Handong Way는 HSF의 참여하는 개발자들이 보다 동일한 목표로 나아갈 수 있게 도와주는 방향입니다. </p> 
+
+<hr>
+
+
+<div>
+  <p class="medium-text"> 권한 </p>
+  <p class="small-text"> 모든 개인에게는 HSF 프로젝트에 참여할 기회가 주어지지만, 모두의 권한은 커뮤니티에 기여하는 것에 기반합니다. </p> 
+  <p class="small-text"> 권한은 모두 개인에게 있으며, 만료되지 않고 다른 타인에게 양도할 수도 없습니다. 또한 하나의 프로젝트에서 획득한 권한은 다른 프로젝트에 적용시킬 수 없습니다. </p>
+</div>
+
+<hr>
+
+<div>
+  <p class="medium-text"> 동료 커뮤니티 </p>
+  <p class="small-text"> HSF는 조직이 아닌 개인이 참여하기 때문에 직위와 관계없이 역할이 동등하고, 투표에 동일한 비중을 가지며, 본인이 참여하는 만큼 기여가 이루어집니다. </p> 
+  <p class="small-text"> HSF의 행동 강령을 준수하면서 서로를 존중해야 하고 전문 지식을 높게 평가하지만 한 명이 모든 것을 담당하는 것은 허용되지 않습니다. </p>
+</div>
+
+<hr>
+
+<div>
+  <p class="medium-text"> 개방형 의사소통 </p>
+  <p class="small-text"> HSF는 여러 커뮤니티에서 요구하는 비동기식 협업을 보장하기 위해 모든 코드 및 의사결정과 관련한 의사소통에 공개적으로 접근할 수 있도록 합니다. </p> 
+  <p class="small-text"> 이러한 의사소통의 방향은 개인적인 결정이 아닙니다. </p>
+</div>
+
+<hr>
+
+<div>
+  <p class="medium-text"> 합의된 의사소통 </p>
+  <p class="small-text"> HSF 프로젝트는 각자의 프로젝트에 기여하는 참여자 중, 자체 구성된 팀(PMC)에 의해 감독됩니다. </p> 
+  <p class="small-text"> 프로젝트의 생산성을 높이기 위해 합의를 이끌어 내는 방향으로 관리가 되어 완전한 합의가 이루어지지 않을 수 있습니다. </p>
+  <p class="small-text"> 완전한 합의가 이루어지지 않은 경우에는 투표를 통해 프로젝트를 진행하게 됩니다. </p>
+</div>
+
+<hr>
+
+<div>
+  <p class="medium-text"> 책임있는 감독 </p>
+  <p class="small-text"> HSF는 선정된 팀을 기반으로 운영을 이끌어 나갑니다. </p> 
+  <p class="small-text"> 다른 사람들의 커밋을 검토해야 하고, 필수 보안 조치를 사용하고, 프로젝트가 다른 프로젝트에 허락 없이 사용되는 것을 맋습니다. </p>
+</div>
+
+
+
+
+
+<hr>
+
+
+
+<!-- <table border="1">
+  <tr>
+    <th>헤더 1</th>
+    <th>헤더 2</th>
+  </tr>
+  <tr>
+    <td>행 1, 열 1</td>
+    <td>행 1, 열 2</td>
+  </tr>
+  <tr>
+    <td>행 2, 열 1</td>
+    <td>행 2, 열 2</td>
+  </tr>
+</table> -->
