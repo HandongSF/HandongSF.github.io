@@ -1,0 +1,76 @@
+---
+layout: archive
+---
+
+<!-- <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Handong Software Foundation이란?" }}</h3> -->
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% for post in posts %}
+    {% include archive-single.html type=entries_layout %}
+  {% endfor %}
+</div>
+
+<style>
+  p.small-text {
+    font-size: 17px; /* 원하는 글자 크기로 설정 */
+  }
+</style>
+
+<style>
+  p.Lmedium-text {
+    font-size: 18px; /* 원하는 글자 크기로 설정 */
+    font-weight: bold;
+  }
+</style>
+
+<style>
+  p.medium-text {
+    font-size: 21px; /* 원하는 글자 크기로 설정 */
+    font-weight: bold;
+  }
+</style>
+
+
+{% include paginator.html %}
+
+<h3> Resources & Tools </h3>
+
+<p class="small-text"> 이 페이지는 HSF에서 주로 사용되는 개발 도구에 대한 설명을 담고 있습니다. </p> 
+
+<!-- <a href="/_pages/way"> <p class="small-text"> The Handong Way가 무엇인가요? </p> </a> -->
+<!-- <a href="/_pages/faq"> <p class="small-text"> FAQ </p> </a> -->
+
+<hr>
+
+<p class="medium-text"> github란? </p>
+<p class="small-text"> github는 코드 원격 저장소로 사용되는 가장 유명한 프레임워크입니다. github에 대한 더 구체적인 설명을 확인하려면 <a href="/_pages/github"> <p class="small-text"> 여기 </p> </a>를 눌러주세요. </p> 
+
+
+
+
+
+
+<p> <br>     </p>
+
+
+<!-- <table border="1">
+  <tr>
+    <th>헤더 1</th>
+    <th>헤더 2</th>
+  </tr>
+  <tr>
+    <td>행 1, 열 1</td>
+    <td>행 1, 열 2</td>
+  </tr>
+  <tr>
+    <td>행 2, 열 1</td>
+    <td>행 2, 열 2</td>
+  </tr>
+</table> -->
