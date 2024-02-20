@@ -354,7 +354,19 @@ layout: archive
   <p class="small-text"> Dependabot Alerts는 깃허브에서 저장소가 보안에 취약한 저장소를 사용하는 것을 감지하면 알림을 보내주는 기능입니다. </p> 
   <p class="small-text"> 대부분의 저장소에서 기본적으로 활성화 되어있는 기능으로, 새로운 취약점이 발생할 때마다 자동으로 저장소 보유자와 보안 경고를 구독한 사용자에게 알림이 전송됩니다. </p> 
 
-  <p class="small-text"> 대부분의 저장소에서 기본적으로 활성화 되어있는 기능으로, 새로운 취약점이 발생할 때마다 자동으로 저장소 보유자와 보안 경고를 구독한 사용자에게 알림이 전송됩니다. </p> 
+  <img src="/assets/github35.png">
+  <p class="small-text"> 하지만 활성화 되어있지 않다면, Settings로 이동하여 활성화 시켜줄 수 있습니다. </p> 
+
+  <img src="/assets/github36.png">
+
+  <p class="small-text"> 활성화 되어있다면, Security 탭에서 Dependabot alerts 섹션을 선택하여 현재까지 발생한 모든 보안 경고를 확인할 수 있습니다. </p> 
+
+  <p class="small-text"> 이 기능은 비공개 저장소에서도 사용할 수 있으며, 저장소 소유자와 접근 권한을 가진 사용자만 경고를 볼 수 있습니다. </p> 
+  <p class="small-text"> 추가적으로 .github/dependabot.yml 파일을 통해 dependabot의 동작을 더욱 세밀하게 조정할 수 있습니다. 예를 들어, 업데이트할 의존성 유형, 업데이트 빈도 및 대상 브랜치 등을 지정할 수 있습니다. </p> 
+
+  <p class="small-text"> 이 Dependabot은 Security update와 Version update 2가지 주요한 기능을 가지고 있습니다. </p> 
+  <p class="small-text"> Security update는 Settings의 Security & analysis 탭에서 Dependabot security updates를 활성화 시켜주면 사용할 수 있는데, 보안적으로 취약한 의존성이 발생할 경우 안전한 버전으로 업데이트하는 PR을 자동으로 생성해주는 기능입니다. </p> 
+  <p class="small-text"> Version updates는 프로젝트의 의존성을 자동으로 최신 상태로 유지합니다. 의존성이 업데이트 될 때마다 자동으로 PR을 생성하게 되고, dependabot.yml 파일을 통해 해당 기능을 사용할 수 있습니다. </p> 
   
 </div>
 <hr>
