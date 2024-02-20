@@ -1,0 +1,72 @@
+---
+layout: archive
+---
+
+<!-- <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Handong Software Foundation이란?" }}</h3> -->
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% for post in posts %}
+    {% include archive-single.html type=entries_layout %}
+  {% endfor %}
+</div>
+
+<style>
+  p.small-text {
+    font-size: 17px; /* 원하는 글자 크기로 설정 */
+  }
+</style>
+
+<style>
+  p.Lmedium-text {
+    font-size: 18px; /* 원하는 글자 크기로 설정 */
+    font-weight: bold;
+  }
+</style>
+
+<style>
+  p.medium-text {
+    font-size: 21px; /* 원하는 글자 크기로 설정 */
+    font-weight: bold;
+  }
+</style>
+
+
+{% include paginator.html %}
+
+<h3> github에 관하여 </h3>
+
+<p class="small-text"> 이 페이지는 HSF에 개발자들을 위한 github 자료를 제공합니다.  </p> 
+
+<p class="small-text"> 깃허브에 대한 정확한 정보를 통해 보다 오픈소스 개발 중 발생할 수 있는 일들을 방지하는 것을 목표로 둡니다. </p> 
+
+<hr>
+
+
+
+
+
+
+
+
+
+<!-- <table border="1">
+  <tr>
+    <th>헤더 1</th>
+    <th>헤더 2</th>
+  </tr>
+  <tr>
+    <td>행 1, 열 1</td>
+    <td>행 1, 열 2</td>
+  </tr>
+  <tr>
+    <td>행 2, 열 1</td>
+    <td>행 2, 열 2</td>
+  </tr>
+</table> -->
