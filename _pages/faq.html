@@ -1,0 +1,73 @@
+---
+layout: archive
+---
+
+<!-- <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Handong Software Foundation이란?" }}</h3> -->
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% for post in posts %}
+    {% include archive-single.html type=entries_layout %}
+  {% endfor %}
+</div>
+
+<style>
+  p.small-text {
+    font-size: 17px; /* 원하는 글자 크기로 설정 */
+  }
+</style>
+
+<style>
+  p.Lmedium-text {
+    font-size: 18px; /* 원하는 글자 크기로 설정 */
+    font-weight: bold;
+  }
+</style>
+
+<style>
+  p.medium-text {
+    font-size: 21px; /* 원하는 글자 크기로 설정 */
+    font-weight: bold;
+  }
+</style>
+
+
+{% include paginator.html %}
+
+<h3> FAQ </h3>
+
+<p class="small-text"> 이 페이지는 HSF에 자주 물어보는 질문을 정리해둔 페이지입니다. </p> 
+
+<p class="small-text"> 필요하고 중요한 질문들 위주로 모아 두어, 처음 HSF에 접하는 개발자들의 편의성을 높이는 것에 중점을 둡니다. </p> 
+
+<hr>
+
+
+
+
+
+
+<hr>
+
+
+
+<!-- <table border="1">
+  <tr>
+    <th>헤더 1</th>
+    <th>헤더 2</th>
+  </tr>
+  <tr>
+    <td>행 1, 열 1</td>
+    <td>행 1, 열 2</td>
+  </tr>
+  <tr>
+    <td>행 2, 열 1</td>
+    <td>행 2, 열 2</td>
+  </tr>
+</table> -->
