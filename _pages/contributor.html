@@ -1,0 +1,95 @@
+---
+layout: archive
+---
+
+<!-- <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Handong Software Foundation이란?" }}</h3> -->
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% for post in posts %}
+    {% include archive-single.html type=entries_layout %}
+  {% endfor %}
+</div>
+
+<style>
+  p.small-text {
+    font-size: 17px; /* 원하는 글자 크기로 설정 */
+  }
+</style>
+
+<style>
+  p.Lmedium-text {
+    font-size: 18px; /* 원하는 글자 크기로 설정 */
+    font-weight: bold;
+  }
+</style>
+
+<style>
+  p.medium-text {
+    font-size: 21px; /* 원하는 글자 크기로 설정 */
+    font-weight: bold;
+  }
+</style>
+
+
+{% include paginator.html %}
+
+<h3> Becomming a Contributor & Host a Project </h3>
+
+<p class="small-text"> 이 페이지는 Contributor로 시작하기 위해 어떠한 단계를 거쳐야 하는 지와 자신의 프로젝트를 HSF 생태계에 호스팅 하기 위해 어떻게 해야하는 지에 대해 설명합니다. </p> 
+<hr>
+<div>
+  <p class="Lmedium-text"> Becomming a Contributor </p>
+
+  <p class="small-text"> 가장 먼저 Contributor와 Committer 등 여러가지 HSF에 대한 문서를 읽어야 합니다. HSF 생태계 자체에 대한 이해가 충분히 되었다면 다음 단계로 넘어갈 수 있습니다. </p> 
+
+  <p class="small-text"> HSF의 프로젝트 중, 마음에 드는 프로젝트를 선택합니다. 활발한 커뮤니티가 장점이 될 수도 있고, 매력적인 주제가 장점이 될 수도 있습니다. </p> 
+  <p class="small-text"> 그 이후, 해당 프로젝트의 메일링 리스트를 구독하여 현재 어떻게 진행이 되고 있는 지에 대해 확인하고 온보딩을 해야 합니다. </p>
+
+  <p class="small-text"> 그 이후 그 프로젝트의 Committer를 따라서 본인이 할 수 있는 업무부터 천천히 참여하는 것을 시작하면 Contributor로 참여하기 위한 모든 준비는 끝납니다. </p>  
+</div>
+<hr>
+
+<div>
+  <p class="Lmedium-text"> Host a Project </p>
+
+  <p class="small-text"> 자신의 프로젝트를 HSF 플랫폼에 이식하여 발전시키고 싶다면 다음의 순서를 따라야 합니다. </p> 
+
+  <p class="small-text"> 가장 먼저, 지금까지 자신이 해온 프로젝트에 대한 문서화가 되어있어야 합니다. HSF는 여러 명의 개발자들이 스쳐 지나가며 발전해가는 형태로 운영이 되기 때문에 인수인계는 필수적입니다. </p> 
+  <p class="small-text"> 현재 자신이 해온 모든 것들에 대해서 거짓 없이 문서화를 진행한 후에 HSF 운영팀과 메일로 소통해야 합니다. <a href="/_pages/about"> 여기 </a>로 이동하여 HSF 운영팀과 연락하는 방법을 찾을 수 있습니다. </p>
+
+  <p class="small-text"> HSF 운영팀의 심의 이후 프로젝트를 HSF에 호스팅 하기로 결정이 되었다면, 깃허브 저장소를 HSF 조직으로 이동한 후에 새로운 메일링 리스트를 발급받아야 합니다. </p> 
+
+  <p class="small-text"> 프로젝트를 호스팅한 개인 및 팀은 Committer의 역할을 부여받고, 초기 개발 부분을 담당해야 할 수도 있습니다. </p>  
+</div>
+<hr>
+
+
+
+
+
+
+
+
+
+
+<!-- <table border="1">
+  <tr>
+    <th>헤더 1</th>
+    <th>헤더 2</th>
+  </tr>
+  <tr>
+    <td>행 1, 열 1</td>
+    <td>행 1, 열 2</td>
+  </tr>
+  <tr>
+    <td>행 2, 열 1</td>
+    <td>행 2, 열 2</td>
+  </tr>
+</table> -->
