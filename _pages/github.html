@@ -40,25 +40,51 @@ layout: archive
 
 {% include paginator.html %}
 
-<h3> github에 관하여 </h3>
+<h3> GitHub에 관하여 </h3>
 
-<p class="small-text"> 이 페이지는 HSF에 개발자들을 위한 github 자료를 제공합니다.  </p> 
+<p class="small-text"> 이 페이지는 HSF에 개발자들을 위한 GitHub 자료를 제공합니다.  </p> 
 
 <p class="small-text"> 깃허브에 대한 정확한 정보를 통해 보다 오픈소스 개발 중 발생할 수 있는 일들을 방지하는 것을 목표로 둡니다. </p> 
 
 <hr>
 
 <div>
-  <p class="medium-text"> 깃허브가 무엇인가요? </p>
+  <p class="medium-text"> 목차 </p>
 
-  <p class="small-text"> 깃허브(GitHub)는 소프트웨어 개발자들이 소스 코드를 공유하고 협업하기 위한 플랫폼입니다. </p> 
-  <p class="small-text"> 깃(Git)이라는 버전 관리 시스템을 사용하여 프로젝트의 여러 버전을 관리할 수 있게 해주며, 개발자들이 코드를 저장하고, 추적하며, 변경 사항을 다른 사용자들과 공유할 수 있게 해줍니다. </p> 
-  <p class="small-text"> 깃허브는 오픈 소스 프로젝트부터 개인 프로젝트까지 다양한 종류의 소프트웨어 개발 프로젝트를 지원합니다. </p> 
+  
 </div>
 
 <hr>
 
 <div>
+  <a href="#Code Management"> <p class="small-text"> Code Management </p> </a>
+  <a href="#GitHub Actions"> <p class="small-text"> GitHub Actions </p> </a>
+  <a href="#GitHub Packages"> <p class="small-text"> GitHub Packages </p> </a>
+  <a href="#Code Review"> <p class="small-text"> Code Review </p> </a>
+  <a href="#Pull Request"> <p class="small-text"> Pull Request </p> </a>
+  <a href="#Protected Branches"> <p class="small-text"> Protected Branches </p> </a>
+  <a href="#Code Owner"> <p class="small-text"> Code Owner </p> </a>
+  <a href="#Draft Pull Request"> <p class="small-text"> Draft Pull Request </p> </a>
+  <a href="#Automatic Code Riview Assignment"> <p class="small-text"> Automatic Code Riview Assignment </p> </a>
+  <a href="#Environment Protection Rules"> <p class="small-text"> Environment Protection Rules </p> </a>
+  <a href="#Projects"> <p class="small-text"> Projects </p> </a>
+  <a href="#Milestones"> <p class="small-text"> Milestones </p> </a>
+  <a href="#Organization and Team Management"> <p class="small-text"> Organization and Team Management </p> </a>
+  <a href="#Wiki"> <p class="small-text"> Wiki </p> </a>
+  <a href="#Multiple Issue Assignees"> <p class="small-text"> Multiple Issue Assignees </p> </a>
+  <a href="#Code Scanning & Secret Scanning"> <p class="small-text"> Code Scanning & Secret Scanning </p> </a>
+  <a href="#Dependency Review & Dependabot Alerts"> <p class="small-text"> Dependency Review & Dependabot Alerts </p> </a>
+  <a href="#GitHub Security Advisories"> <p class="small-text"> GitHub Security Advisories </p> </a>
+  <a href="#Role-based Access Control(RBAC)"> <p class="small-text"> Role-based Access Control(RBAC) </p> </a>
+  <a href="#Required 2FA"> <p class="small-text"> Required 2FA </p> </a>
+  <a href="#Audit Log"> <p class="small-text"> Audit Log </p> </a>
+
+
+</div>
+
+<hr>
+
+<div id = "Code Management">
   <p class="medium-text"> Code Management </p>
   <img src="/assets/github1.png">
   
@@ -68,10 +94,10 @@ layout: archive
 </div>
 <hr>
 
-<div>
-  <p class="medium-text"> Github Actions </p>
+<div id = "GitHub Actions">
+  <p class="medium-text"> GitHub Actions </p>
 
-  <p class="small-text"> 깃허브 액션(github action)은 깃허브에서 제공하는 CI/CD 자동화 도구입니다.</p> 
+  <p class="small-text"> 깃허브 액션(GitHub action)은 깃허브에서 제공하는 CI/CD 자동화 도구입니다.</p> 
   <p class="small-text"> 코드 커밋, PR, 이슈 생성 등 여러가지 이벤트에 반응하여 자동으로 반복적인 작업(빌드, 테스트, 배포)을 수행할 수 있습니다. </p> 
 
   <img src="/assets/github2.png">
@@ -86,10 +112,10 @@ layout: archive
 </div>
 <hr>
 
-<div>
-  <p class="medium-text"> Github Packages </p>
+<div id = "GitHub Packages">
+  <p class="medium-text"> GitHub Packages </p>
 
-  <p class="small-text"> 깃허브 패키지(github package)는 깃허브의 패키지 호스팅 서비스로, 소프트웨어 패키지를 호스팅하고 공유하며, 버전을 관리하는데 사용됩니다. 깃허브 생태계 개발자들이 소스코드 뿐만 아니라 패키지를 함께 관리할 수 있도록 도와줍니다. </p> 
+  <p class="small-text"> 깃허브 패키지(GitHub package)는 깃허브의 패키지 호스팅 서비스로, 소프트웨어 패키지를 호스팅하고 공유하며, 버전을 관리하는데 사용됩니다. 깃허브 생태계 개발자들이 소스코드 뿐만 아니라 패키지를 함께 관리할 수 있도록 도와줍니다. </p> 
   <p class="small-text"> npm, nuGet, Maven, RubyGems, Docker 등 여러가지 패키지 관리 시스템과 통합됩니다. </p> 
 
 
@@ -101,7 +127,7 @@ layout: archive
 </div>
 <hr>
 
-<div>
+<div id = "Code Review">
   <p class="medium-text"> Code Review </p>
 
   <p class="small-text"> 코드 리뷰(code review)는 깃허브에서 제공하는 시각적인 기능입니다. </p> 
@@ -116,7 +142,7 @@ layout: archive
 </div>
 <hr>
 
-<div>
+<div id = "Pull Request">
   <p class="medium-text"> Pull Request </p>
 
   <p class="small-text"> PR(Pull Request)는 깃허브의 가장 중요한 기능 중 하나입니다. </p> 
@@ -131,7 +157,7 @@ layout: archive
 </div>
 <hr>
 
-<div>
+<div id = "Protected Branches">
   <p class="medium-text"> Protected Branches </p>
 
   <p class="small-text"> 이 기능은 브랜치를 보호하는 기능입니다. 큰 규모의 프로젝트의 경우, 하나의 브랜치만 사용하는 것이 아니라 여러 개의 브랜치를 사용합니다. </p> 
@@ -148,7 +174,7 @@ layout: archive
 </div>
 <hr>
 
-<div>
+<div id = "Code Owner">
   <p class="medium-text"> Code Owner </p>
 
   <p class="small-text"> Code Owner 기능은 특정 파일이나 디렉토리에 대한 소유권을 지정한 사용자 혹은 팀에게 할당할 수 있는 기능입니다. </p> 
@@ -164,7 +190,7 @@ layout: archive
 </div>
 <hr>
 
-<div>
+<div id = "Draft Pull Request">
   <p class="medium-text"> Draft Pull Request </p>
 
   <p class="small-text"> Draft PR은 정식으로 PR을 보내는 것이 아니라, 현재 자신이 마주한 문제를 코드와 함께 설명하기 위해 주로 사용됩니다. </p> 
@@ -176,7 +202,7 @@ layout: archive
 </div>
 <hr>
 
-<div>
+<div id = "Automatic Code Riview Assignment">
   <p class="medium-text"> Automatic Code Riview Assignment </p>
 
   <p class="small-text"> 이 기능은 자동으로 코드를 리뷰하는 사람을 할당해주는 기능입니다. </p> 
@@ -186,7 +212,7 @@ layout: archive
 </div>
 <hr>
 
-<div>
+<div id = "Environment Protection Rules">
   <p class="medium-text"> Environment Protection Rules </p>
 
   <p class="small-text"> 이는 깃허브 액션 워크플로우에서 특정 환경에 대한 배포를 보호하고 관리하기 위한 기능으로 사용됩니다. </p> 
@@ -203,7 +229,7 @@ layout: archive
 </div>
 <hr>
 
-<div>
+<div id = "Projects">
   <p class="medium-text"> Projects </p>
   <p class="small-text"> Projects는 오픈소스 프로젝트의 규모가 커질 수록 필수적으로 사용되는 기능입니다. </p> 
   <p class="small-text"> 현재 진행 중이거나, 완료 혹은 진행 예정인 사항들을 여러가지 형식으로 표기해서 공유하는 것이 가능합니다. </p> 
@@ -219,7 +245,7 @@ layout: archive
 </div>
 <hr>
 
-<div>
+<div id = "Milestones">
   <p class="medium-text"> Milestones </p>
   <p class="small-text"> Milestone은 프로젝트의 이정표와 같은 역할을 수행합니다. </p> 
   <p class="small-text"> 하나의 마일스톤은 여러 개의 이슈로 구성이 될 수 있고, 각 마일스톤은 프로젝트의 발전에 한 단계를 담당하게 됩니다. </p> 
@@ -237,7 +263,7 @@ layout: archive
 </div>
 <hr>
 
-<div>
+<div id = "Discussion">
   <p class="medium-text"> Discussion </p>
   <p class="small-text"> Discussion은 깃허브의 이슈보다 더 넓은 범위의 소통이 필요할 때 사용됩니다. </p> 
   <p class="small-text"> 여러가지 방식으로 사용되며, 프로젝트와 관련한 아이디어나 질문, 인사이트를 나누는 공간으로 사용될 수 있습니다. </p> 
@@ -252,22 +278,7 @@ layout: archive
 </div>
 <hr>
 
-<div>
-  <p class="medium-text"> Discussion </p>
-  <p class="small-text"> Discussion은 깃허브의 이슈보다 더 넓은 범위의 소통이 필요할 때 사용됩니다. </p> 
-  <p class="small-text"> 여러가지 방식으로 사용되며, 프로젝트와 관련한 아이디어나 질문, 인사이트를 나누는 공간으로 사용될 수 있습니다. </p> 
-
-  <p class="small-text"> 이 기능은 깃허브 저장소에서 자동으로 생성이 되는 것이 아니라 사용자들이 직접 기능을 열어야 사용할 수 있습니다. </p> 
-
-  <img src="/assets/github20.png">
-  <p class="small-text"> 깃허브의 저장소에 Settings 탭으로 들어가 Discussion 항목을 활성화 시켜줄 수 있습니다. </p> 
-  <img src="/assets/github21.png">
-  <p class="small-text"> 그 다음, 깃허브 이슈를 생성하는 것처럼 여러가지 글을 생성하여 다른 개발자들과 소통하는 것이 가능합니다. </p> 
-  
-</div>
-<hr>
-
-<div>
+<div id = "Organization and Team Management">
   <p class="medium-text"> Organization and Team Management </p>
   <p class="small-text"> 깃허브의 조직(Organization)은 하나의 그룹을 의미합니다. 하나의 Organization은 여러 개의 repository를 보유할 수 있습니다. </p> 
   <p class="small-text"> 이러한 깃허브 조직 내에서도 개인의 권한을 세부적으로 나눌 수 있습니다. 이를 통해 코드의 잘못된 작성과 merge를 방지할 수 있습니다. </p> 
@@ -285,7 +296,7 @@ layout: archive
 </div>
 <hr>
 
-<div>
+<div id = "Wiki">
   <p class="medium-text"> Wiki </p>
   <p class="small-text"> Wiki는 Repository의 설명을 담은 글을 의미합니다. </p> 
   <img src="/assets/github25.png">
@@ -303,7 +314,7 @@ layout: archive
 </div>
 <hr>
 
-<div>
+<div id = "Multiple Issue Assignees">
   <p class="medium-text"> Multiple Issue Assignees </p>
   <p class="small-text"> 하나의 이슈에 대해서 여러 사람들을 할당할 수 있습니다. </p> 
   <img src="/assets/github28.png">
@@ -314,7 +325,7 @@ layout: archive
 </div>
 <hr>
 
-<div>
+<div id = "Code Scanning & Secret Scanning">
   <p class="medium-text"> Code Scanning & Secret Scanning </p>
   <p class="small-text"> 코드 스캐닝은 깃허브에서 제공하는 보안 관련 기능입니다. 해당 저장소의 코드를 분석하여 보안 취약성 및 코딩 오류를 찾는데 사용할 수 있습니다. </p> 
   <p class="small-text"> 기존 문제에 대한 수정사항을 찾고 우선 순위를 지정하는 것이 가능하며, 개발자가 새로운 문제를 발생시키는 것을 방지합니다. </p> 
@@ -341,7 +352,7 @@ layout: archive
 </div>
 <hr>
 
-<div>
+<div id = "Dependency Review & Dependabot Alerts">
   <p class="medium-text"> Dependency Review & Dependabot Alerts </p>
   <p class="small-text"> 소프트웨어 개발 중에서 의존성은 중요한 항목 중 하나로 작용합니다. 이 의존성 중에서 안전하지 않아 수정된 버전이 배포되고, 이 이전 버전을 사용할 경우 프로젝트에 좋지 않은 영향을 끼칠 수 있습니다. </p> 
   <p class="small-text"> Dependency Review는 PR 중에서 해당 프로젝트의 종속성이 변경된 PR에 적용하여 안전하지 않은 의존성 목록을 파악할 수 있습니다. </p> 
@@ -371,8 +382,8 @@ layout: archive
 </div>
 <hr>
 
-<div>
-  <p class="medium-text"> Github Security Advisories </p>
+<div id = "GitHub Security Advisories">
+  <p class="medium-text"> GitHub Security Advisories </p>
   <p class="small-text"> 이 기능은 오픈소스 프로젝트 관리자들이 보안 취약점을 신고하고, 이에 대한 공지 및 대응 방안을 작성하며, 커뮤니티와 안전하게 공유할 수 있도록 돕는 기능입니다. </p> 
 
   <p class="small-text"> 보안 취약점이 공개되기 전에 비공개로 논의를 할 수 있고, 보안 취약점이 해결된 이후에는 공개적으로 공지하여 사용자들이 알맞은 조치를 취할 수 있도록 도와줍니다. </p> 
@@ -394,7 +405,7 @@ layout: archive
 </div>
 <hr>
 
-<div>
+<div id = "Role-based Access Control(RBAC)">
   <p class="medium-text"> Role-based Access Control(RBAC) </p>
   <p class="small-text"> RBAC는 깃허브에서 조직 및 저장소 수준에서 사용자에게 다양한 역할과 권한을 할당하여 접근을 관리하는 기능입니다. 이를 통해 프로젝트의 보안을 강화하고 필요한 작업을 수행하는 사용자를 정밀하게 제어할 수 있습니다. </p> 
   
@@ -420,7 +431,7 @@ layout: archive
 </div>
 <hr>
 
-<div>
+<div id = "Required 2FA">
   <p class="medium-text"> Required 2FA </p>
   <p class="small-text"> 이 기능은 깃허브 조직의 보안을 강화하기 위해 2단계 인증(2FA)을 필수로 설정할 수 있는 옵션을 제공합니다. </p> 
   
@@ -436,7 +447,7 @@ layout: archive
 </div>
 <hr>
 
-<div>
+<div id = "Audit Log">
   <p class="medium-text"> Audit Log </p>
   <p class="small-text"> Audit Log는 조직의 이벤트와 활동에 대한 상세한 기록을 제공합니다. </p> 
   
