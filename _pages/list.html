@@ -1,0 +1,57 @@
+---
+layout: archive
+---
+
+<!-- <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Handong Software Foundation이란?" }}</h3> -->
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% for post in posts %}
+    {% include archive-single.html type=entries_layout %}
+  {% endfor %}
+</div>
+
+<style>
+  p.small-text {
+    font-size: 17px; /* 원하는 글자 크기로 설정 */
+  }
+</style>
+
+<style>
+  p.Lmedium-text {
+    font-size: 19px; /* 원하는 글자 크기로 설정 */
+    font-weight: bold;
+  }
+</style>
+
+<style>
+  p.medium-text {
+    font-size: 21px; /* 원하는 글자 크기로 설정 */
+    font-weight: bold;
+  }
+</style>
+
+
+{% include paginator.html %}
+
+<h3> Project List </h3>
+
+<p class="small-text"> 현재 HSF에서 진행 중인 모든 프로젝트 리스트입니다. </p>
+
+<hr>
+<div>
+  <p class="medium-text"> jChecker </p>
+  <p class="small-text"> jChecker는 Java Programming Language를 사용해, 객체지향 프로그램 자동 채점을 진행하는 도구입니다. </p> 
+
+  
+</div>
+
+
+
+
