@@ -111,7 +111,7 @@ analytics:
 author:
   name             : "HSF"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "The His Software Foundation"
+  bio              : "The Handong Software Foundation"
   email            :
   links:
     - label: "Email"
