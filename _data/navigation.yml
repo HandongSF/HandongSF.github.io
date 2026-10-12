@@ -4,8 +4,6 @@ main:
     url: /_pages/community
   - title: "프로젝트"
     url: /_pages/projects
-  - title: "다운로드"
-    url: /_pages/downloads
   - title: "운영"
     url: /_pages/learn
   - title: "기술자료 및 도구"
